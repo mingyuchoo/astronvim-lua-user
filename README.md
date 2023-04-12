@@ -11,7 +11,7 @@ git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ### Step 2: clone this repository
 
 ```bash
-git clone https://github.com/mingyuchoo/<this-repo-name> ~/.config/nvim/lua/user
+git clone https://github.com/mingyuchoo/astronvim-lua-user.git ~/.config/nvim/lua/user
 ```
 
 ## References
