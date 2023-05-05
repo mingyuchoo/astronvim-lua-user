@@ -7,6 +7,9 @@ return {
   },
   {
     "nbouscal/vim-stylish-haskell",
-    lazy = false
+    lazy = false,
   },
+  {
+    "github/copilot.vim",
+  }
 }
