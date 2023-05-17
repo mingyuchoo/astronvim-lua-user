@@ -5,5 +5,5 @@ return {
   g = {
     autoformat_enabled = true,
     diagnostics_mode = 3,
-  }
+  },
 }
