@@ -1,3 +1,4 @@
+-- HACK: we can change this file name to `init.lua`
 return {
   {
     "sainnhe/sonokai",
@@ -11,5 +12,11 @@ return {
   },
   {
     "github/copilot.vim",
-  }
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+    event = "User AstroFile",
+  },
 }

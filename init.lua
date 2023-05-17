@@ -1,4 +1,5 @@
 return {
+	colorscheme = "sonokai",
 	lsp = {
 		formatting = {
 			format_on_save = true,
@@ -9,5 +10,4 @@ return {
 			cmdheight = 1,
 		},
 	},
-	colorscheme = "sonokai",
 }

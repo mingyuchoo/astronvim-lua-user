@@ -18,7 +18,7 @@ git clone https://github.com/mingyuchoo/astronvim-lua-user.git ~/.config/nvim/lu
 
 ### change to `dayfox`
 
-change `nvim/lua/user/plugins/init.lua` file
+change `nvim/lua/user/plugins/user.lua` file
 
 ```lua
 return {
