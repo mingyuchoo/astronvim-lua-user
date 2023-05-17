@@ -38,8 +38,16 @@ return {
 }
 ```
 
+## How to use plugins
+
+### vim-dadbod-ui
+
+1. `:DBUI` - open DBUI
+2. `:DBUIToggle` - toggle DBUI
+
 ## References
 
 - <https://github.com/AstroNvim/user_example>
 - <https://github.com/AstroNvim/AstroNvim>
 - <https://astronvim.com/>
+- <https://alpha2phi.medium.com/vim-neovim-managing-databases-d253faf4a0cd>

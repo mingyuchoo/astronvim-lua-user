@@ -23,4 +23,13 @@ return {
     opts = {},
     event = "User AstroFile",
   },
+  -- Vim-dadbod
+  {
+    "kristijankusak/vim-dadbod-ui",
+    requires = {
+      "tpope/vim-dadbod",
+      "tpope/vim-dotenv",
+    },
+    lazy = false,
+  }
 }
