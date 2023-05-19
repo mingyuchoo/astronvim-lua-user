@@ -26,10 +26,10 @@ return {
   -- Vim-dadbod
   {
     "kristijanhusak/vim-dadbod-ui",
-    requires = {
-      "tpope/vim-dadbod",
-      "tpope/vim-dotenv",
-    },
+    lazy = false,
+  },
+  {
+    "tpope/vim-dadbod",
     lazy = false,
   },
 }
