@@ -25,7 +25,7 @@ return {
   },
   -- Vim-dadbod
   {
-    "kristijankusak/vim-dadbod-ui",
+    "kristijanhusak/vim-dadbod-ui",
     requires = {
       "tpope/vim-dadbod",
       "tpope/vim-dotenv",
