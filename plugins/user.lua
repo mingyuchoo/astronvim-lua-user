@@ -7,6 +7,12 @@ return {
       vim.g.sonokai_style = "shusia"
     end,
   },
+  {
+    "cormacrelf/vim-colors-github",
+    init = function()
+      vim.g.background = "light"
+    end,
+  },
   -- Stylish-haskell plugin
   {
     "nbouscal/vim-stylish-haskell",
