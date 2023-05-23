@@ -38,4 +38,7 @@ return {
     "tpope/vim-dadbod",
     lazy = false,
   },
+  {
+    'hkupty/iron.nvim'
+  },
 }
