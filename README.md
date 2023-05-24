@@ -2,18 +2,32 @@
 
 ## How to use this repo
 
-### Step 1: install AstroNvim
+### For macos/Linux
+
+#### Step 1: install AstroNvim
 
 ```bash
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
 ```
 
-### Step 2: clone this repository
+#### Step 2: clone this repository
 
 ```bash
-git clone git@github.com:mingyuchoo/astronvim-lua-user.git ~/.config/nvim/lua/user
+git clone git@github.com:mingyuchoo/astronvim-lua-usergit $env:LOCALAPPDATA\nvim\lua\user
+```
+### For Windows
+
+#### Step 1: install AstroNvim
+
+```bash
+git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
 ```
 
+#### Step 2: clone this repository
+
+```bash
+git clone git@github.com:mingyuchoo/astronvim-lua-user.git $env:LOCALAPPDATA\nvim\lua\user
+```
 ## How to change colorscheme with something else
 
 ### change to `dayfox`
