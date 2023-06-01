@@ -25,6 +25,12 @@ brew install fd
 brew install ripgrep
 ```
 
+for Ubuntu
+
+```bash
+sudo apt install -y ripgrep
+```
+
 ### For Windows
 
 #### Step 1: install AstroNvim
