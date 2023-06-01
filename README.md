@@ -7,13 +7,13 @@
 #### Step 1: install AstroNvim
 
 ```bash
-git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ```
 
 #### Step 2: clone this repository
 
 ```bash
-git clone git@github.com:mingyuchoo/astronvim-lua-usergit $env:LOCALAPPDATA\nvim\lua\user
+git clone git@github.com:mingyuchoo/astronvim-lua-usergit ~/.config/nvim/lua/user
 ```
 
 #### Step 3: install dependencies
