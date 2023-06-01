@@ -15,6 +15,16 @@ git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
 ```bash
 git clone git@github.com:mingyuchoo/astronvim-lua-usergit $env:LOCALAPPDATA\nvim\lua\user
 ```
+
+#### Step 3: install dependencies
+
+for macOS
+
+```bash
+brew install fd
+brew install ripgrep
+```
+
 ### For Windows
 
 #### Step 1: install AstroNvim
