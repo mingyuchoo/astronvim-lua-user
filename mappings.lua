@@ -1,10 +1,32 @@
 return {
   -- normal mode
-  n = {},
+  n = {
+    ["<C-f>"] = { "<Right>", desc = "Emacs character forward" },
+    ["<C-b>"] = { "<Left>", desc = "Emacs character backward" },
+    ["<C-a>"] = { "<Home>", desc = "Emacs line start" },
+    ["<C-e>"] = { "<End>", desc = "Emacs line end" },
+  },
   -- insert mode
-  i = {},
+  i = {
+    ["<C-f>"] = { "<Right>", desc = "Emacs character forward" },
+    ["<C-b>"] = { "<Left>", desc = "Emacs character backward" },
+    ["<C-a>"] = { "<Home>", desc = "Emacs line start" },
+    ["<C-e>"] = { "<End>", desc = "Emacs line end" },
+    ["<C-h>"] = { "<Backspace>", desc = "Emacs delete forward" },
+    ["<C-d>"] = { "<Del>", desc = "Emacs delete backward" },
+    ["<C-k>"] = { "<Esc>d$a", desc = "Emacs delete to line end" },
+  },
   -- visual mode
-  v = {},
+  v = {
+  },
   -- terminal mode
-  t = {},
+  t = {
+    ["<C-f>"] = { "<Right>", desc = "Emacs character forward" },
+    ["<C-b>"] = { "<Left>", desc = "Emacs character backward" },
+    ["<C-a>"] = { "<Home>", desc = "Emacs line start" },
+    ["<C-e>"] = { "<End>", desc = "Emacs line end" },
+    ["<C-h>"] = { "<Backspace>", desc = "Emacs delete forward" },
+    ["<C-d>"] = { "<Del>", desc = "Emacs delete backward" },
+    ["<C-k>"] = { "<Esc>d$a", desc = "Emacs delete to line end" },
+  },
 }
