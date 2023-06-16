@@ -27,6 +27,6 @@ return {
     ["<C-e>"] = { "<End>", desc = "Emacs line end" },
     ["<C-h>"] = { "<Backspace>", desc = "Emacs delete forward" },
     ["<C-d>"] = { "<Del>", desc = "Emacs delete backward" },
-    ["<C-k>"] = { "<Esc>d$a", desc = "Emacs delete to line end" },
+    ["<C-k>"] = { "<Esc>d", desc = "Emacs delete to line end" },
   },
 }
