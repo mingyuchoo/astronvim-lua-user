@@ -1,6 +1,24 @@
 return {
+	-- default vim themes:
+	--   blue
+	--   darkblue
+	--   default
+	--   delek
+	--   desert
+	--   elford
+	--   evening
+	--   industry
+	--   koehler
+	--   morning
+	--   murphy
+	--   pablo
+	--   peachpuff
+	--   ron
+	--   shine
+	--   slate
+	--   torte
+	--   zellner
 	colorscheme = "sonokai", -- sainnhe/sonokai
-	-- colorscheme = "github", -- cormacrelf/vim-colors-github
 	lsp = {
 		formatting = {
 			format_on_save = true,
