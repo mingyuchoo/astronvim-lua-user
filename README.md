@@ -83,6 +83,11 @@ in Astonvim
 :checkhealth
 ```
 
+## Tips and Tricks
+
+Q. When occurred some errors with rust-analyzer
+A. Please run `rustup component add rust-analyzer`
+
 ## References
 
 - <https://github.com/AstroNvim/user_example>
