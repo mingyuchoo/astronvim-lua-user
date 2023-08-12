@@ -75,6 +75,14 @@ return {
 1. `:DBUI` - open DBUI
 2. `:DBUIToggle` - toggle DBUI
 
+## How to inspect error messages
+
+in Astonvim
+
+```lua
+:checkhealth
+```
+
 ## References
 
 - <https://github.com/AstroNvim/user_example>
