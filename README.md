@@ -83,6 +83,16 @@ in Astonvim
 :checkhealth
 ```
 
+## How to fix error
+
+### `WARNING **TreeSitter jsonc** parser is not installed.`
+
+```lua
+:TSInstall! javascript
+:TSInstall! lua
+:checkhealth
+```
+
 ## Tips and Tricks
 
 Q. When occurred some errors with rust-analyzer
