@@ -1,4 +1,4 @@
-# astronvim-lua-user
+# README
 
 ## How to use this repo
 
