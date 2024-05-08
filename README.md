@@ -1,106 +1,34 @@
-# README
+# AstroNvim Template
 
-## How to use this repo
+**NOTE:** This is for AstroNvim v4+
 
-### For macos/Linux
+A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-#### Step 1: install AstroNvim
+## 🛠️ Installation
 
-```bash
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+#### Make a backup of your current nvim and shared folder
+
+```shell
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-#### Step 2: clone this repository
+#### Create a new user repository from this template
 
-```bash
-git clone git@github.com:mingyuchoo/astronvim-lua-user.git ~/.config/nvim/lua/user
+Press the "Use this template" button above to create a new repository to store your user configuration.
+
+You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
+
+#### Clone the repository
+
+```shell
+git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```
 
-#### Step 3: install dependencies
+#### Start Neovim
 
-for macOS
-
-```bash
-brew install fd
-brew install ripgrep
+```shell
+nvim
 ```
-
-for Ubuntu
-
-```bash
-sudo apt install -y ripgrep
-```
-
-### For Windows
-
-#### Step 1: install AstroNvim
-
-```bash
-git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
-```
-
-#### Step 2: clone this repository
-
-```bash
-git clone git@github.com:mingyuchoo/astronvim-lua-user.git $env:LOCALAPPDATA\nvim\lua\user
-```
-## How to change colorscheme with something else
-
-### change to `dayfox`
-
-change `nvim/lua/user/plugins/user.lua` file
-
-```lua
-return {
-  {
-    "EdenEast/nightfox.nvim"
-  },
-  ...
-}
-```
-
-change `nvim/lua/user/init.lua` file
-
-```lua
-return {
-  colorscheme = "dayfox",
-  ...
-}
-```
-
-## How to use plugins
-
-### vim-dadbod-ui
-
-1. `:DBUI` - open DBUI
-2. `:DBUIToggle` - toggle DBUI
-
-## How to inspect error messages
-
-in Astonvim
-
-```lua
-:checkhealth
-```
-
-## How to fix error
-
-### `WARNING **TreeSitter jsonc** parser is not installed.`
-
-```lua
-:TSInstall! javascript
-:TSInstall! lua
-:checkhealth
-```
-
-## Tips and Tricks
-
-Q. When occurred some errors with rust-analyzer
-A. Please run `rustup component add rust-analyzer`
-
-## References
-
-- <https://github.com/AstroNvim/user_example>
-- <https://github.com/AstroNvim/AstroNvim>
-- <https://astronvim.com/>
-- <https://alpha2phi.medium.com/vim-neovim-managing-databases-d253faf4a0cd>
