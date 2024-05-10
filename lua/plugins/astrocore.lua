@@ -32,17 +32,23 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        cmdheight = 1,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+
+        -- #############################################################
+        -- Added by @mingyuchoo
+        -- #############################################################
+        autoformat_enabled = true,
       },
     },
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
-      -- first key is the mode
+      -- normal mode
       n = {
         -- second key is the lefthand side of the map
 
@@ -64,10 +70,40 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+        -- #############################################################
+        -- Added by @mingyuchoo
+        -- #############################################################
+        ["<C-f>"] = { "<Right>", desc = "Emacs character forward" },
+        ["<C-b>"] = { "<Left>", desc = "Emacs character backward" },
+        ["<C-a>"] = { "<Home>", desc = "Emacs line start" },
+        ["<C-e>"] = { "<End>", desc = "Emacs line end" },
       },
+      -- insert mode
+      i = {
+        ["<C-f>"] = { "<Right>", desc = "Emacs character forward" },
+        ["<C-b>"] = { "<Left>", desc = "Emacs character backward" },
+        ["<C-a>"] = { "<Home>", desc = "Emacs line start" },
+        ["<C-e>"] = { "<End>", desc = "Emacs line end" },
+        ["<C-h>"] = { "<Backspace>", desc = "Emacs delete forward" },
+        ["<C-d>"] = { "<Del>", desc = "Emacs delete backward" },
+        ["<C-k>"] = { "<Esc>d$a", desc = "Emacs delete to line end" },
+      },
+      -- visual mode
+      v = {},
+      -- terminal mode
       t = {
-        -- setting a mapping to false will disable it
-        -- ["<esc>"] = false,
+        -- #############################################################
+        -- Added by @mingyuchoo
+        -- #############################################################
+        ["<C-f>"] = { "<Right>", desc = "Emacs character forward" },
+        ["<C-b>"] = { "<Left>", desc = "Emacs character backward" },
+        ["<C-a>"] = { "<Home>", desc = "Emacs line start" },
+        ["<C-e>"] = { "<End>", desc = "Emacs line end" },
+        ["<C-h>"] = { "<Backspace>", desc = "Emacs delete forward" },
+        ["<C-d>"] = { "<Del>", desc = "Emacs delete backward" },
+        ["<C-k>"] = { "<Esc>d", desc = "Emacs delete to line end" },
+        ["<Esc>"] = { "<C-\\><C-n>", desc = "Exit insert mode" },
       },
     },
   },
