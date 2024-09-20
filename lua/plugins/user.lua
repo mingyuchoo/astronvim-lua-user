@@ -102,6 +102,12 @@ return {
 		"nbouscal/vim-stylish-haskell",
 		lazy = false,
 	},
+	-- Rust plugin
+	{
+		'mrcjkb/rustaceanvim',
+		version = '^5', -- Recommended
+		lazy = false, -- This plugin is already lazy
+        },
 	-- Copilot X plugin
 	{
 		"github/copilot.vim",
